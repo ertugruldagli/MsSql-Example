@@ -1,0 +1,8 @@
+--UNION ALL
+
+--SELECT City
+--FROM CUSTOMERS
+--UNION all
+--SELECT City
+--FROM Suppliers
+--ORDER BY City
