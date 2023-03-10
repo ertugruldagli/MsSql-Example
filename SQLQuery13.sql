@@ -1,5 +1,5 @@
 
-DECLARE @CompanyName varchar(50), @Address nvarchar(20), @City nvarchar(20), @Country nvarchar(20)
+DECLARE @CompanyName varchar(30), @Address nvarchar(20), @City nvarchar(10), @Country nvarchar(20)
 
 SELECT CompanyName, Address, City, Country
 from Suppliers
