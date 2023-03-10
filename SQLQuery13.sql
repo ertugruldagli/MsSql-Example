@@ -17,9 +17,9 @@
 
 ---Diðer  yol-------
 
-DECLARE @CompanyName varchar(30), @LongAdress nvarchar(100)
+DECLARE @CompanyName nvarchar(30), @LongAdress nvarchar(100)
 
-SET @CompanyName='Exotica Liquids'
+SET @CompanyName='Tokyo Traders'
 
 SELECT  @LongAdress = Address + ' ' + City + ' ' + Country 
 From Suppliers
