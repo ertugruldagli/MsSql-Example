@@ -1,0 +1,1 @@
+--ürün ortalama fiyatýnýn altýnda fiyata sahip ürünlerin adý ve fiyatýný listeleyen sorgu
