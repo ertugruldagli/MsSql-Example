@@ -5,7 +5,6 @@ ALTER PROC spDivide
 (@a decimal, @b decimal, @c decimal output)
 AS
 BEGIN
-
 	BEGIN TRY --
 		SET @C=@A/@B;
 		print 'Sonuc: '+ Convert(nchar(10),@c)
@@ -20,5 +19,6 @@ BEGIN
 			ERROR_LINE()AS ErrorLine,
 			ERROR_MESSAGE()AS ErrorMessage
 	END CATCH
-
 END;
+
+exec dbo.spDivide 5,0
