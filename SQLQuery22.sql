@@ -2,7 +2,7 @@
 
 Select ProductName, UnitPrice
 From Products
-where ProductName In (
-	Select AVG(UnitPrice) as 'Ortalama Fiyat'
-	From Products
-	having AVG(UnitPrice)<UnitPrice)
+where UnitPrice < (
+	Select AVG(UnitPrice) 
+	From Products)
+	
