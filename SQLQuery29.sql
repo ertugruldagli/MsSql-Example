@@ -1,13 +1,14 @@
  --- olayda br bölme iþlemi var . Hata olabilir düþücesiyle bu hesaplama/iþlem kýsmýný bir 
  ---try catch bloklarý arasýna almak yoluyla buradadki hatalarýn neler oldupunu görebilir.
 
-CREATE PROC spDivide
+ALTER PROC spDivide
 (@a decimal, @b decimal, @c decimal output)
 AS
 BEGIN
 
 	BEGIN TRY --
 		SET @C=@A/@B;
+		print 'Sonuc: '+ Convert(nchar(10),@c)
 	END TRY
 	
 	BEGIN CATCH 
