@@ -1,7 +1,7 @@
 --Cursor Kullanýmý 
 -- Employees tablosundaki FirstName,
 
-CREATE PROC spEmployeeReport
+ALTER PROC spEmployeeReport
 AS
 BEGIN
 --
@@ -38,7 +38,7 @@ For
 		--kayýtlar bitti. Þu ana ekrana bastým bir þeyler..
 		--cursorýmý kapat
 
-		CLOSE curEmployee
+		CLOSE curEmployees
 		--close etsem dahi hala bellekte.
 		--o yüzden al eline oraðý salla gitsin
 		DEALLOCATE curEmployees
