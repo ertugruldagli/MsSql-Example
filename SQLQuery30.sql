@@ -5,7 +5,7 @@ CREATE PROC spEmployeeReport
 AS
 BEGIN
 --
-Declare @FirstNamee nvarchar(Max)
+Declare @FirstName nvarchar(Max)
 DECLARE @LastName nvarchar(Max)
 DEclare @Title nvarchar(Max)
 
@@ -30,8 +30,18 @@ For
 	while @@FETCH_STATUS =0 -- Yani kayýt varsa iþlemini yap
 		begin 
 		print Concat(@FirstName,' ',@LastName, ' - ', @Title)
-
+		--sýradaki satýra geçmem lazým o yüzden 
 		FETCH NEXT FROM curEmployees INTO
 		@FirstName, @LastName, @Title --bir sonraki kaydý okuma
 		end
+
+		--kayýtlar bitti. Þu ana ekrana bastým bir þeyler..
+		--cursorýmý kapat
+
+		CLOSE curEmployee
+		--close etsem dahi hala bellekte.
+		--o yüzden al eline oraðý salla gitsin
+		DEALLOCATE curEmployees
 END
+
+exec dbo.spEmployeeReport
