@@ -2,9 +2,10 @@
  ---try catch bloklarý arasýna almak yoluyla buradadki hatalarýn neler oldupunu görebilir.
 
 ALTER PROC spDivide
-(@a decimal, @b decimal, @c decimal output)
+(@a decimal, @b decimal)
 AS
 BEGIN
+	declare @c decimal
 	BEGIN TRY --
 		SET @C=@A/@B;
 		print 'Sonuc: '+ Convert(nchar(10),@c)
