@@ -1,1 +1,1 @@
-exec dbo.spSupplierByCountry 'usa','uk'
+--exec dbo.spSupplierByCountry 'usa','uk'
