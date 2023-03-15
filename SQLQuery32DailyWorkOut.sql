@@ -3,7 +3,7 @@ AS
 BEGIN 
 	--declare curFreight CURSOR
 	 
-			select p.ProductID, od.OrderID,o.Freight as 'yeni fiyat',od.UnitPrice
+			select p.ProductID, od.OrderID,o.Freight,od.UnitPrice
 			from Orders o
 			inner join [Order Details] od on o.OrderID=od.OrderID
 			inner Join Products p on p.ProductID = od.ProductID
@@ -11,4 +11,6 @@ BEGIN
 
 END
 
+
+exec dbo.spSiparisZam
 
