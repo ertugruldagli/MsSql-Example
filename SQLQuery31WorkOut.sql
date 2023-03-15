@@ -1,30 +1,38 @@
-CREATE PROC spShippersCRUD
-(@ShipperID int, @OpCode char(1), @CompanyName nvarchar(40), @Phone nvarchar(24))---PARAMETRE TANIM ALANI
-AS
-BEGIN 
+--CREATE PROC spShippersCRUD
+--(@ShipperID int, 
+--@OpCode char(1),
+--@CompanyName nvarchar(40),
+--@Phone nvarchar(24))---PARAMETRE TANIM ALANI
+--AS
+--BEGIN 
 
--- Önclikle tablonun þimdikini durumunu listele
-	select *
-	from Shippers
+---- Önclikle tablonun þimdikini durumunu listele
+--	select *
+--	from Shippers
 
---iþlemler bölümü
-	IF @ShipperID <> 0
-		begin --bir kayýt için tabloda bulunan bir kayýt için R,U,D iþlerinlerinden biri isteniyormuþ
-			if @OpCode = 'R' --Read
-				Select * from Shippers where ShipperID=@ShipperID
+----iþlemler bölümü
+--	IF @ShipperID <> 0
+--		begin --bir kayýt için tabloda bulunan bir kayýt için R,U,D iþlerinlerinden biri isteniyormuþ
+--			if @OpCode = 'R' --Read
+--				Select * from Shippers where ShipperID=@ShipperID
 
-			if @OpCode = 'U' --Update
-				Update Shippers set CompanyName=@CompanyName, Phone=@Phone where ShipperID=@ShipperID
+--			if @OpCode = 'U' --Update
+--				Update Shippers set CompanyName=@CompanyName, Phone=@Phone where ShipperID=@ShipperID
 
-			if @OpCode = 'D' --DELETE
-				DELETE from Shippers where ShipperID=@ShipperID
-		end
+--			if @OpCode = 'D' --DELETE
+--				DELETE from Shippers where ShipperID=@ShipperID
+--		end
 
-		else --- ShippersID=0 ise demekki yeni kayýt yapmam isteniyormuþ
-			begin 
-				INSERT INTO Shippers (CompanyName,Phone) VALUES (@CompanyName,@Phone)
-			end
+--		else --- ShippersID=0 ise demekki yeni kayýt yapmam isteniyormuþ
+--			begin 
+--				INSERT INTO Shippers (CompanyName,Phone) VALUES (@CompanyName,@Phone)
+--			end
 
-Select* from Shippers
+--Select* from Shippers
 
-END
+--END
+
+
+--exec dbo.spShippersCRUD 1,'U','YurtÝçi Kargo','0216123467'
+
+--exec dbo.spShippersCRUD 1,'R',null,null
