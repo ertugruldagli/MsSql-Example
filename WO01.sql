@@ -50,9 +50,12 @@
 --Select CompanyName, Address, City, Country
 --From Customers
 --where Country not IN('Germany','Mexico','Spain')
+
 ------------------------------------------------
-
-
+--10.)
+--Select OrderDate, ShippedDate, CustomerID, Freight
+--From Orders
+--where OrderDate=(21/05/1996)
 
 ------------------------------------------------
 
