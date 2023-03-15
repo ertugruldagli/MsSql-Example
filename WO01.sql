@@ -40,16 +40,22 @@
 --where city='Buenos Aires'
 
 --------------------------------------------------
+--8.)
+--Select ProductName, UnitPrice, QuantityPerUnit
+--From Products
+--where UnitsInStock=0
 
 ------------------------------------------------
-
-------------------------------------------------
-
-
-
-------------------------------------------------
-
---Select lower( CustomerID) as 'Kimlik Tnm'
+--9.)
+--Select CompanyName, Address, City, Country
 --From Customers
+--where Country not IN('Germany','Mexico','Spain')
+------------------------------------------------
+
+
+
+------------------------------------------------
+
+
 
 ------------------------------------------------
