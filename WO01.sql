@@ -59,9 +59,45 @@
 
 ------------------------------------------------
 --11.)
-Select FirstName, LastName, Country
-From Employees
-where Country not in('USA')
-
+--Select FirstName, LastName, Country
+--From Employees
+--where Country not in('USA')
 
 ------------------------------------------------
+--13.)
+--Select City, CompanyName, ContactName
+--From Customers
+--where ContactName like 'A%' or ContactName like 'B%'
+
+--------------------------------------------------
+--14.)
+--Select*
+--from orders
+--where Freight>500
+
+------------------------------------------------
+--15.)
+--Select CompanyName, ContactName,Fax
+--From Customers
+--where Fax <> ''
+
+------------------------------------------------
+-----16.)
+--Select FirstName,LastName, ReportsTo
+--From Employees
+--where ReportsTo  not  like  null
+
+-------------------------------------------------
+----17.)
+--select CompanyName, ContactName, City
+--From Customers
+--where City Like ('%L%')
+--order by contactName desc
+
+------------------------------------------------
+--18.)
+--Select FirstName, LastName, BirthDate
+--From Employees
+--where BirthDate < '1950-01-01' and BirthDate > '1950-12-31'
+
+----------------------------------------------
