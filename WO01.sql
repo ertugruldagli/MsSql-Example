@@ -58,7 +58,10 @@
 --where OrderDate=(21/05/1996)
 
 ------------------------------------------------
-
+--11.)
+Select FirstName, LastName, Country
+From Employees
+where Country not in('USA')
 
 
 ------------------------------------------------
