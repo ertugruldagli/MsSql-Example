@@ -101,3 +101,20 @@
 --where BirthDate < '1950-01-01' and BirthDate > '1950-12-31'
 
 ----------------------------------------------
+--19.)
+--Select S.SupplierID, p.ProductName, S.CompanyName
+--from Suppliers S
+--Inner Join Products p on p.SupplierID=S.SupplierID
+--where  S.CompanyName  in('Exotic Liquids','Specialty Biscuits, Ltd.','Escargots Nouveaux')
+--order by S.SupplierID asc
+
+-----------------------------------------------------
+--20.)
+--Select LastName, FirstName
+--from Employees
+--where City='Seattle'
+
+----------------------------------------------------
+--21.)
+
+
