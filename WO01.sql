@@ -115,7 +115,12 @@
 --where City='Seattle'
 
 ----------------------------------------------------
---21.)
+--22.)
+--Select ContactName
+--from Customers
+--where ContactName not like '_A%'
+
+------------------------------------------------
 
 
 
