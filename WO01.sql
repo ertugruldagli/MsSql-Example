@@ -82,13 +82,13 @@
 --where Fax <> ''
 
 ------------------------------------------------
------16.)
+--16.)
 --Select FirstName,LastName, ReportsTo
 --From Employees
 --where ReportsTo  not  like  null
 
 -------------------------------------------------
-----17.)
+--17.)
 --select CompanyName, ContactName, City
 --From Customers
 --where City Like ('%L%')
@@ -121,6 +121,8 @@
 --where ContactName not like '_A%'
 
 ------------------------------------------------
-
+--23.)
+--Select CustomerID, Freight
+--From Orders
 
 
