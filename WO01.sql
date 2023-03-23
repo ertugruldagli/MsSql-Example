@@ -122,7 +122,18 @@
 
 ------------------------------------------------
 --23.)
---Select CustomerID, Freight
+--Select  CustomerID, count(Freight) as toplam_fiyat
 --From Orders
+--GROUP BY CustomerID
+--having sum(Freight)>200
+
+----------------------------------------------------
+--24.)
+
+select* 
+from Employees
+
+
+
 
 
