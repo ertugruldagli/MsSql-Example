@@ -128,10 +128,11 @@
 --having sum(Freight)>200
 
 ----------------------------------------------------
---24.)
+--25.)
+--select avg(UnitPrice) as 'OrtlamaFiyat', max(UnitPrice) as 'MaximumFiyat',min(UnitPrice) as 'MinimumFiyat'
+--from Products
 
-select* 
-from Employees
+------------------------------------------------
 
 
 
