@@ -1,0 +1,1 @@
+select firstname + ' ' + upper(LastName) as 'Personel Adý ve Soyad' from Employees order by HireDate asc
