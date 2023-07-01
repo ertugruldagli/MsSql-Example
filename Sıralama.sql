@@ -1,3 +1,1 @@
-use northwind
-select CategoryName,Description from categories 
-order by CategoryName asc
+select companyname, contactname, contacttitle, phone from Customers

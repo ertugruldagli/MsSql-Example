@@ -1,0 +1,1 @@
+select companyname, contactname, contacttitle, phone from Customers order by Phone
