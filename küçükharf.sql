@@ -1,0 +1,1 @@
+select lower(CustomerID) as 'Kimlik Tnm'from customers
