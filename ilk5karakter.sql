@@ -1,0 +1,1 @@
+select left(CategoryName,5) as 'KýsaBilgi' from Categories
