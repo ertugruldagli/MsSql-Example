@@ -1,0 +1,1 @@
+select top 10 orderID,orderDAte, ShippedDate, CustomerID,Freight from orders order by Freight asc
